@@ -1,0 +1,20 @@
+{
+    "name": "socket.io-p2pmesh-client",
+    "version": "0.0.1",
+    "description": "Allows a client to participate in a rtcp2p mesh.",
+    "dependencies": {
+        "socket.io-client": "automattic/socket.io-client#master"
+    },
+    "contributors": [
+        {
+          "name": "Chris Caruso",
+          "email": "chriscaruso@live.com"
+        }
+    ],
+    "main": "./p2pmesh",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chcaru/socket.io-p2pmesh-client"
+    }
+}
