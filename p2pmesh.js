@@ -61,21 +61,17 @@ P2PMesh.prototype._dispatchMessage = function(eventName, data) {
 
 P2PMesh.prototype._serializeData = function(eventName, data) {
 
-    var type = typeof data === 'string' ? 0 : 1;
-    data = type ? data : JSON.stringify(data);
-
     return {
         id: this._uuid(),
         e: eventName,
         d: data,
-        t: type,
         c: Date.now()
     };
 };
 
 P2PMesh.prototype._deserializeData = function(data) {
 
-    return data.t ? JSON.parse(data.d) : data.d;
+    return data.d;
 };
 
 P2PMesh.prototype._dispatchData = function(data, connection) {
